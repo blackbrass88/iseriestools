@@ -1,0 +1,13 @@
+Package: iseriestools
+Type: Package
+Title: Functions for Working with IBM iSeries Data
+Version: 0.1.0
+Author: Jacob Schwan
+Maintainer: Jacob Schwan <blackbrass88@gmail.com>
+Description: A collection of functions I commonly use when working with data from a Jack Henry 2020
+    iSeries server.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports:
+    purrr
