@@ -4,13 +4,14 @@
 #' This function takes a Julian date and converts it to a date object.
 #' The Julian format expected is a four digit year and the three digit number of the day of the year.
 #' For example January 1st's number is 001 and December 31st is either 365 or 366 if it is a leap year.
-#' @param j.date Text string in the format of YYYYDDD
+#' @param j.date Numeric in the format of YYYYDDD
 #' @return object of class Date
-#' @keywords julian, date
+#' @keywords julian date
+#' @export from_julian
 #' @examples
-#' from.julian("2017090")
+#' from_julian(2017090)
 
-from.julian <- function(j.date){
+from_julian <- function(j.date){
 
     if(purrr::is_empty(j.date)) {
         return(NA)

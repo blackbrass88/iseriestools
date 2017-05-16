@@ -6,11 +6,12 @@
 #' For example January 1st's number is 001 and December 31st is either 365 or 366 if it is a leap year.
 #' @param my.date Date object
 #' @return text string in the format of YYYYDDD
-#' @keywords julian, date
+#' @keywords julian date
+#' @export to_julian
 #' @examples
-#' to.julian(as.Date("2017-03-31"))
+#' to_julian(as.Date("2017-03-31"))
 
-to.julian <- function(my.date){
+to_julian <- function(my.date){
 
     ##Find the year.
     yr <- format(my.date, "%Y")
